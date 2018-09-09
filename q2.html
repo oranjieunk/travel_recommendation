@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>두번째 문제</title>
+    <script language="JavaScript">
+      function ans()
+      {
+        var parameters = location.search.substring(1).split("&");
+
+        var temp = parameters[0].split("=");
+        l = unescape(temp[1]);
+        temp = parameters[1].split("=");
+        p = unescape(temp[1]);
+        alert(1)
+        return location.href='q2.html';
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <div class="char"> 2. 당신이 보고싶은 것은?</div>
+
+      <div class="answer">휴양지와 자연경관</div>
+      <br />
+      <input type="submit" class="select" id="q2_a1" value="선택"
+      onclick="return ans();">
+      <br /><br />
+      <div class="answer">유적지, 미술관/박물관</div>
+      <br />
+      <input type="submit" class="select" id="q2_a1" value="선택"
+        onclick="ans();">
+    </center>
+  </body>
+</html>
